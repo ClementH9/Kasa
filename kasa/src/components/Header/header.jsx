@@ -9,11 +9,6 @@ function Header() {
     )
 }
 
-function Footer() {
-    return (
-        
-    )
-}
 
 export default Header
 export default Footer
