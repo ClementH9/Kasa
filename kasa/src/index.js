@@ -13,6 +13,9 @@ ReactDOM.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/" element={<About />} />
+        <Route path="/" element={<Logement />} />
+        <Route path="/" element={<Error />} />
       </Routes>
     </Router>
   </React.StrictMode>,
