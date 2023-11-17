@@ -15,7 +15,7 @@ function Error() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Error 404
         </a>
       </header>
     </div>

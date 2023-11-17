@@ -15,7 +15,7 @@ function Logement() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Logement
         </a>
       </header>
     </div>
