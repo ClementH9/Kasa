@@ -6,7 +6,7 @@ import Header from './components/Header/header'
 import About from './pages/about/about'
 import Logement from './pages/logement/logement'
 import Error from './pages/error/error'
-import Footer from '.components/Footer/footer'
+import Footer from './components/Footer/footer'
 import './Assets/css/App.css'
 
 ReactDOM.render(
