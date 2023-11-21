@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
-import logo from '../../assets/Images/logo-kasa.svg';
+import logo from '../../Assets/Images/logo-kasa.svg'
  
 function Header() {
     return (
