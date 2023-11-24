@@ -5,7 +5,7 @@ import Banner from '../../components/Banners/home-banner';
 function App() {
   return (
     <>
-      <homeBanner />
+      <Banner />
     </>
     /*<div className="App">
       <header className="App-header">
