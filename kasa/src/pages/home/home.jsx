@@ -1,9 +1,13 @@
 import logo from '../../Assets/Images/logo.svg';
 import '../../Assets/css/App.css';
+import Banner from '../../components/Banners/home-banner';
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <homeBanner />
+    </>
+    /*<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,7 +22,7 @@ function App() {
           Homepage
         </a>
       </header>
-    </div>
+    </div>*/
   );
 }
 

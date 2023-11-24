@@ -28,6 +28,23 @@
   color: #61dafb;
 }
 
+nav {
+  display : flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu {
+  width : 309px;
+  display : flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu a {
+  margin: auto;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +52,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.footer {
+  background-color: black;
+  text-align: center;
+  height : 209px;
+  display : flex;
+  flex-direction: column;
+}
+
+.footer-text {
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+.footer-logo {
+  margin: auto;
 }
