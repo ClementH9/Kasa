@@ -41,6 +41,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   text-decoration: none;
+  padding-left: 40px;
 }
 
 .menu {
