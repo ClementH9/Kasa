@@ -6,13 +6,11 @@
 
 .App {
   text-align: center;
-  font-family: "Montserrat", sans-serif;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-  margin: 5%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -42,6 +40,7 @@ nav {
   justify-content: space-between;
   text-decoration: none;
   padding-left: 40px;
+  padding-top: 10px;
 }
 
 .menu {
@@ -55,20 +54,20 @@ nav {
   margin: auto;
   text-decoration: none;
   color: #FF6060;
-
 }
 
 .background-banner {
-  border-radius: 25px;
-  width: 1240px;
+  border-radius: 20px;
+  width: 95%;
   height: 223px;
-  margin: auto;
-  align-items: center;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 20px;
 }
 
 h1 {
-  font-size: 48px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 300;
 }
 
 .home-banner-text {
