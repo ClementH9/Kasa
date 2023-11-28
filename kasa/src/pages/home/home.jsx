@@ -8,14 +8,9 @@ function App() {
     <>
       <Banner />
     </>
-    <div>
-        {logementCard.map((logement, logement.json) => (
-            <Card
-                cover={`${profile.name}-${index}`}
-                title={logement.title}
-            />
-        ))}
-    </div>
+    <>
+      <Gallery />
+    </>
   )
 }
 
