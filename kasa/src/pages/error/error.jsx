@@ -1,25 +1,16 @@
-import logo from '../../Assets/Images/logo.svg';
 import '../../Assets/css/App.css';
+import { NavLink } from "react-router-dom";
 
 function Error() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Error 404
-        </a>
-      </header>
-    </div>
-  );
-}
+    return (
+        <>
+            <div className="error">
+                <p className="error-number">404</p>
+                <p className="error-text">Oups! La page que vous demandez n'existe pas.</p>
+                <NavLink to="/" className="error-link">Retourner sur la page d'accueil</NavLink>
+            </div>
+        </>
+        );
+    }
 
 export default Error;

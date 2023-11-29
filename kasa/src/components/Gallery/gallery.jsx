@@ -1,9 +1,9 @@
 import Card from '../../components/Card/card'
-import logement from './logement.json'
+import logement from '../../Assets/logement.json'
 
 function Gallery() {
     return (
-      <section className='home__gallery'>
+      <section className='home-gallery'>
         {logement.map(data => {
           return (
             <Card
