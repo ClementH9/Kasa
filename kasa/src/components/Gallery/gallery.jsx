@@ -1,4 +1,5 @@
 import Card from '../../components/Card/card'
+import logement from './logement.json'
 
 function Gallery() {
     return (

@@ -1,14 +1,11 @@
-import logo from '../../Assets/Images/logo.svg';
 import '../../Assets/css/App.css';
 import Banner from '../../components/Banners/home-banner';
-import Card from '../../components/Card/card'
+import Gallery from '../../components/Gallery/gallery'
 
 function App() {
   return (
     <>
       <Banner />
-    </>
-    <>
       <Gallery />
     </>
   )
