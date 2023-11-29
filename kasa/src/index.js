@@ -13,12 +13,14 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Logement/:id" element={<Logement />} />
-        <Route path="/*" element={<Error />} />
-      </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Logement/:id" element={<Logement />} />
+            <Route path="/*" element={<Error />} />
+          </Routes>
+        </main>
       <Footer />
     </Router>
   </React.StrictMode>,

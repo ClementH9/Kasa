@@ -13,6 +13,11 @@
   pointer-events: none;
 }
 
+header, footer, main {
+  width : 1240px;
+  margin: auto;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -39,8 +44,6 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   text-decoration: none;
-  padding-left: 40px;
-  padding-top: 10px;
 }
 
 .menu {
@@ -57,17 +60,21 @@ nav {
 }
 
 .background-banner {
-  border-radius: 25px;
-  width: 95%;
-  height: 223px;
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-top: 20px;
-}
+  border-radius: 20px;
+  filter: brightness(0.75);
+ } 
 
 h1 {
-  font-size: 40px;
-  font-weight: 300;
+  font-size: 48px;
+  font-weight: 500;
+  position: absolute;
+  color: white;
+}
+
+.home-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-banner-text {
@@ -75,16 +82,16 @@ h1 {
 }
 
 .home-gallery {
-  width: 95%;
   background-color: lightgray;
   border-radius: 25px;
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+}
+
+h2 {
+  color: white;
 }
 
 @keyframes App-logo-spin {
