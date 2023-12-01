@@ -59,7 +59,7 @@ nav {
   color: #FF6060;
 }
 
-.background-banner {
+.banner {
   border-radius: 20px;
   filter: brightness(0.75);
  } 
@@ -92,6 +92,12 @@ h1 {
 
 h2 {
   color: white;
+}
+
+.card {
+  width: 348px;
+  height: 348px;
+  border-radius: 25px;
 }
 
 @keyframes App-logo-spin {
