@@ -90,11 +90,11 @@ h1 {
   justify-content: space-between;
 }
 
-h2 {
+.card-title {
   color: white;
 }
 
-.card {
+.card-cover {
   width: 348px;
   height: 348px;
   border-radius: 25px;
@@ -107,6 +107,30 @@ h2 {
   to {
     transform: rotate(360deg);
   }
+}
+
+.about-collapse {
+  font-family: "Montserrat", sans-serif;
+  padding-left: 108px;
+  padding-right: 108px;
+}
+
+.about-title {
+  color: white;
+  background-color: #FF6060;
+  border-radius: 5px 5px 0px 0px;
+  margin: auto;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.about-text {
+  color:#FF6060;
+  background-color: lightgray;
+  border-radius: 0px 0px 5px 5px;
+  margin: auto;
+  padding: 15px;
 }
 
 .error-number, .error-text, .error-link {
