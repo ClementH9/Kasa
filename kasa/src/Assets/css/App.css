@@ -13,7 +13,7 @@
   pointer-events: none;
 }
 
-header, main, footer{
+header, main{
   width : 1240px;
   margin: auto;
 }
@@ -99,6 +99,7 @@ h1 {
   height: 348px;
   border-radius: 25px;
 }
+
 
 @keyframes App-logo-spin {
   from {
