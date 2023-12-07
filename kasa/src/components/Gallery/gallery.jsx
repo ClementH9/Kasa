@@ -4,12 +4,11 @@ import { NavLink } from "react-router-dom";
 
 function Gallery() {
     return (
-      <section className='home-gallery'>
+      <section className='home-gallery font-text'>
         {logement.map(data => {
           return (
             <NavLink to="/Logement/:id">
             <Card
-
                 key={data.id} 
                 id={data.id} 
                 title={data.title} 
