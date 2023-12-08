@@ -89,16 +89,20 @@ h1 {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  padding: 2.5rem 0rem;
 }
 
 .card-title {
   color: white;
 }
 
-.card-cover {
-  width: 348px;
-  height: 348px;
+.card {
   border-radius: 25px;
+}
+
+.dim-img {
+  width : 380px;
+  height : 380px;
 }
 
 .about-banner{
