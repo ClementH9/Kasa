@@ -75,6 +75,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2.5rem 0rem;
 }
 
 .home-banner-text {
@@ -100,6 +101,9 @@ h1 {
   border-radius: 25px;
 }
 
+.about-banner{
+  padding: 2.5rem 0rem;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -114,6 +118,8 @@ h1 {
   font-family: "Montserrat", sans-serif;
   padding-left: 108px;
   padding-right: 108px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .collapse-title {
@@ -124,6 +130,10 @@ h1 {
   padding-left: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
+  border:#FF6060;
+  width: 100%;
+  text-align: left;
+  font-size: 24px;
 }
 
 .collapse-content {
@@ -131,7 +141,7 @@ h1 {
   background-color: lightgray;
   border-radius: 0px 0px 5px 5px;
   margin: auto;
-  padding: 15px;
+  padding: 10px;
 }
 
 .error-number, .error-text, .error-link {
