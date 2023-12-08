@@ -110,13 +110,13 @@ h1 {
   }
 }
 
-.about-collapse {
+.collapse-container{
   font-family: "Montserrat", sans-serif;
   padding-left: 108px;
   padding-right: 108px;
 }
 
-.about-title {
+.collapse-title {
   color: white;
   background-color: #FF6060;
   border-radius: 5px 5px 0px 0px;
@@ -126,7 +126,7 @@ h1 {
   padding-bottom: 5px;
 }
 
-.about-text {
+.collapse-content {
   color:#FF6060;
   background-color: lightgray;
   border-radius: 0px 0px 5px 5px;
