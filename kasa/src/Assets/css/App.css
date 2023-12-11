@@ -92,14 +92,45 @@ h1 {
   padding: 2.5rem 0rem;
 }
 
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px; /* Bordure arrondie */
+  margin: 10px; /* Espace entre chaque carte */
+  flex: 0 0 calc(33.33% - 20px); /* Trois cartes par ligne avec marge */
+}
+
+.card img {
+  width: 348px;
+  height: 348px;
+  border-radius: 15px; /* Pour s'assurer que l'image est également arrondie */
+  filter: brightness(0.75);
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
 .card-title {
-  color: white;
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+.home-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espace entre les cartes */
 }
 
 .dim-img {
-  height: 21.25rem;
-  width: 21.25rem;
-  border-radius: 25px;
+  margin-bottom: 20px; /* Ajustez selon votre préférence */
 }
 
 .about-banner{
