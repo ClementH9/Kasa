@@ -143,6 +143,20 @@ h1 {
   border-radius: 0px 0px 5px 5px;
   margin: auto;
   padding: 10px;
+  overflow: hidden;
+}
+
+.hide {
+  max-height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+.show {
+  max-height: 174px; /* Remplacez la valeur par la hauteur maximale attendue de votre contenu */
 }
 
 .error-number, .error-text, .error-link {
@@ -170,6 +184,7 @@ h1 {
   height : 209px;
   display : flex;
   flex-direction: column;
+  padding: 2.5rem 0rem;
 }
 
 .footer-text {
