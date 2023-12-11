@@ -4,10 +4,8 @@ import '../../Assets/css/App.css';
 function Card({ cover, title }) {
     return (
       <div className="card">
-        <div className="dim-img">
-          <img src={cover} alt={cover} className="card-cover" />
-        </div>
-        
+        <img src={cover} alt={cover} className="card-cover" />
+
         <h2 className="card-title">{title}</h2>
       </div>
     );

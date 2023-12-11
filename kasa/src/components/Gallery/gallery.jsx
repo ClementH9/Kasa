@@ -7,14 +7,16 @@ function Gallery() {
       <section className='home-gallery font-text'>
         {logement.map(data => {
           return (
-            <NavLink to="/Logement/:id">
-            <Card
-                key={data.id} 
-                id={data.id} 
-                title={data.title} 
-                cover={data.cover} 
-            />
-            </NavLink>
+            <div className="dim-img">
+              <NavLink to="/Logement/:id">
+              <Card
+                  key={data.id} 
+                  id={data.id} 
+                  title={data.title} 
+                  cover={data.cover} 
+              />
+              </NavLink>
+            </div>
           )
         })}
       </section>
