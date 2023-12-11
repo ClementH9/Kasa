@@ -90,13 +90,14 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   padding: 2.5rem 0rem;
+  margin-bottom: 40px;
 }
 
 .card {
   position: relative;
   overflow: hidden;
-  border-radius: 15px; /* Bordure arrondie */
-  margin: 10px; /* Espace entre chaque carte */
+  border-radius: 25px;
+  margin: 25px;
   flex: 0 0 calc(33.33% - 20px); /* Trois cartes par ligne avec marge */
 }
 
@@ -105,6 +106,7 @@ h1 {
   height: 348px;
   border-radius: 15px; /* Pour s'assurer que l'image est également arrondie */
   filter: brightness(0.75);
+  object-fit: cover;
 }
 
 .card-content {
@@ -129,10 +131,6 @@ h1 {
   justify-content: space-between; /* Espace entre les cartes */
 }
 
-.dim-img {
-  margin-bottom: 20px; /* Ajustez selon votre préférence */
-}
-
 .about-banner{
   padding: 2.5rem 0rem;
 }
@@ -150,7 +148,7 @@ h1 {
   font-family: "Montserrat", sans-serif;
   padding-left: 108px;
   padding-right: 108px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   padding-top: 20px;
 }
 
