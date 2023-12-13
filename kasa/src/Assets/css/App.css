@@ -13,6 +13,10 @@
   pointer-events: none;
 }
 
+header {
+  padding-top: 20px;
+}
+
 header, main{
   width : 1240px;
   margin: auto;
@@ -62,6 +66,7 @@ nav {
 .banner {
   border-radius: 20px;
   filter: brightness(0.75);
+  width: 100%;
  } 
 
 h1 {
@@ -69,6 +74,7 @@ h1 {
   font-weight: 500;
   position: absolute;
   color: white;
+  white-space: nowrap;
 }
 
 .home-banner {
@@ -76,6 +82,7 @@ h1 {
   justify-content: center;
   align-items: center;
   padding: 2.5rem 0rem;
+  width: 100%;
 }
 
 .home-banner-text {
@@ -132,7 +139,7 @@ h1 {
 }
 
 .about-banner{
-  padding: 2.5rem 0rem;
+  padding-top: 40px;
 }
 
 @keyframes App-logo-spin {
@@ -148,7 +155,7 @@ h1 {
   font-family: "Montserrat", sans-serif;
   padding-left: 108px;
   padding-right: 108px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   padding-top: 20px;
 }
 
@@ -224,4 +231,32 @@ h1 {
 
 .footer-logo {
   margin: auto;
+}
+
+/*Responsive Version Tablette*/
+@media screen and (min-width: 769px) and (max-width:992px) {
+  .container
+  {
+      max-width: auto;
+      min-width: auto;
+      padding-left: 40px;
+      padding-right: 40px;
+  } 
+}
+
+/*Responsive Version Mobile*/
+@media screen and (max-width: 768px) {
+  .container
+    {
+        max-width: auto;
+        min-width: auto;
+        padding: 40px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 500;
+      position: absolute;
+      color: white;
+    }
 }

@@ -5,8 +5,10 @@ import Gallery from '../../components/Gallery/gallery'
 function App() {
   return (
     <>
-      <Banner />
-      <Gallery />
+      <div className="container">
+        <Banner />
+        <Gallery />
+      </div>
     </>
   )
 }
