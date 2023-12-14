@@ -4,6 +4,12 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.container
+{
+    min-width: 992px;
+    max-width: 1400px; /* entre 992 et 1400 pixels pour le contenu */
+}
+
 .App {
   text-align: center;
 }
@@ -221,6 +227,8 @@ h1 {
   display : flex;
   flex-direction: column;
   padding: 2.5rem 0rem;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .footer-text {
@@ -233,30 +241,29 @@ h1 {
   margin: auto;
 }
 
-/*Responsive Version Tablette*/
-@media screen and (min-width: 769px) and (max-width:992px) {
-  .container
-  {
-      max-width: auto;
-      min-width: auto;
-      padding-left: 40px;
-      padding-right: 40px;
-  } 
+/* Ajoutez ces styles pour la version mobile (écran < 768px) */
+@media screen and (max-width: 768px) {
+  .home-gallery {
+    justify-content: center; /* Centrer les cartes */
+  }
+
+  .card {
+    flex: 0 0 calc(50% - 20px); /* Deux cartes par ligne avec marge */
+  }
+
+  .card img {
+    width: 100%; /* La largeur de l'image est de 100% pour s'adapter à la largeur de la carte */
+    height: auto; /* Ajuster la hauteur de l'image en conséquence */
+  }
 }
 
-/*Responsive Version Mobile*/
-@media screen and (max-width: 768px) {
-  .container
-    {
-        max-width: auto;
-        min-width: auto;
-        padding: 40px;
-    }
+/* Ajoutez ces styles pour la version tablette (écran entre 769px et 992px) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .home-gallery {
+    justify-content: space-between; /* Espace entre les cartes comme dans la version desktop */
+  }
 
-    h1 {
-      font-size: 24px;
-      font-weight: 500;
-      position: absolute;
-      color: white;
-    }
+  .card {
+    flex: 0 0 calc(50% - 20px); /* Deux cartes par ligne avec marge */
+  }
 }

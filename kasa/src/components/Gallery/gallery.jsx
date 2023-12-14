@@ -8,7 +8,7 @@ function Gallery() {
       {logement.map((data) => {
         return (
           <div className="dim-img" key={data.id}>
-            <NavLink to="/Logement/:id">
+            <NavLink to={`/annonce/${data.id}`}>
               <Card title={data.title} cover={data.cover} />
             </NavLink>
           </div>
