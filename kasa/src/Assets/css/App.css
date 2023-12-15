@@ -237,6 +237,12 @@ h1 {
   margin-top: 40px;
 }
 
+.logement-top {
+  display: flex;
+  margin-bottom: 1.625rem;
+  margin-top: 1.875rem;
+}
+
 .tags-logement{
   background-color: #FF6060;
   color:white;
@@ -249,6 +255,46 @@ h1 {
 
 .host-name-logement {
   white-space: pre-line;
+}
+
+.logement-gauche {
+  width: 60%
+}
+
+.logement-droite {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 40%;
+}
+
+.nom-photo-note {
+  align-items: flex-end;
+}
+
+.name-photo-host{
+  display: flex;
+  align-items: center;
+}
+
+.host-name-logement{
+  text-align: end;
+  margin-right: 15px;
+}
+
+.host-picture-logement {
+  height: 4rem;
+  width: 4rem;
+  border-radius:100%;
+}
+
+.collapses{
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapse-description .collapse-equipments{
+  width: 50%;
 }
 
 .footer {

@@ -25,30 +25,36 @@ function Appartement() {
       <div className="equipments-logement">{targetLogement.equipments}</div>
     </div>*/
 
-    <div className="infos-logement font text">
+    <div className="infos-logement font-text">
       <img className="cover-logement" src={targetLogement.cover} alt="cover"></img>
-      <div className="logement-gauche">
-        <div className="titre-lieu-tags">
-          <h2 className="title-logement">{targetLogement.title}</h2>
-          <div className="location-logement">{targetLogement.location}</div>
-          <div className="tags-logement">{targetLogement.tags}</div>
+      <div className ="logement-top">
+        <div className="logement-gauche">
+          <div className="titre-lieu-tags">
+            <h2 className="title-logement">{targetLogement.title}</h2>
+            <div className="location-logement">{targetLogement.location}</div>
+            <div className="tags-logement">{targetLogement.tags}</div>
+          </div>
         </div>
         <div className="logement-droite">
           <div className="nom-photo-note">
-            <div className="host-name-logement">{hostFirstName}
-            <br />
-            {hostLastName}</div>
-            <img className="host-picture-logement" src={targetLogement.host.picture} alt="host"></img>
+            <div className="name-photo-host">
+              <div className="host-name-logement">{hostFirstName}
+              <br />
+              {hostLastName}</div>
+              <img className="host-picture-logement" src={targetLogement.host.picture} alt="host"></img>
+            </div>
             <div className="rating-logement">{targetLogement.rating}</div>
           </div>
         </div>
-        <div className="collapse-logement">
+      </div>
+      <div className="collapses">
+        <div className="collapse-description">
         <Collapse 
           title="Description"
           content={String(targetLogement.description)}
           />
         </div>
-        <div className="collapse-logement">
+        <div className="collapse-equipments">
         <Collapse 
           title="Equipements"
           content={String(targetLogement.equipments)}
