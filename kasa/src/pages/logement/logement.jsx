@@ -49,13 +49,13 @@ function Appartement() {
       </div>
       <div className="collapses">
         <div className="collapse-description">
-        <Collapse 
+          <Collapse 
           title="Description"
           content={String(targetLogement.description)}
           />
         </div>
         <div className="collapse-equipments">
-        <Collapse 
+          <Collapse 
           title="Equipements"
           content={String(targetLogement.equipments)}
           />
