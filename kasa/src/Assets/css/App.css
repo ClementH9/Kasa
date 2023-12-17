@@ -216,15 +216,24 @@ h1 {
 
 .error-number {
   font-size: 288px;
+  font-weight: 700;
 }
 
 .error-text {
   font-size: 36px;
+  font-weight: 500;
+  margin: 40px;
 }
 
 .error-link{
   font-size: 18px;
+  font-weight: 500;
+  margin: 120px;
 } 
+
+.error-link a {
+  color: #FF6060;
+}
 
 .infos-logement{
   color: #FF6060;
@@ -235,6 +244,7 @@ h1 {
   height: 415px;
   border-radius: 25px;
   margin-top: 40px;
+  object-fit: cover;
 }
 
 .logement-top {
