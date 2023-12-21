@@ -44,7 +44,7 @@ function Appartement() {
               {hostLastName}</div>
               <img className="host-picture-logement" src={targetLogement.host.picture} alt="host"></img>
             </div>
-            <Ratings rating={targetLogement.rating} />
+            <div className="rating-logement">{targetLogement.rating}</div>
           </div>
         </div>
       </div>

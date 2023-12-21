@@ -159,12 +159,12 @@ h1 {
 
 .aboutitems {
   padding-bottom: 20px;
+  padding-left: 108px;
+  padding-right: 108px;
 }
 
 .collapse-container{
   font-family: "Montserrat", sans-serif;
-  padding-left: 108px;
-  padding-right: 108px;
   padding-bottom: 20px;
   padding-top: 20px;
 }
@@ -300,11 +300,16 @@ h1 {
 
 .collapses{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.collapse-description .collapse-equipments{
-  width: 50%;
+.collapse-description {
+  width: 48%;
+}
+
+.collapse-equipments{
+  width: 48%;
 }
 
 .footer {
