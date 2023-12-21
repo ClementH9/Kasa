@@ -254,13 +254,18 @@ h1 {
 }
 
 .tags-logement{
+  display: flex;
+  justify-content:flex-start;
+}
+
+.style-tag{
   background-color: #FF6060;
   color:white;
   width: 120px;
   height: 25px;
-  radius: 10px;
-  display: flex;
-  justify-content: space-between;
+  border-radius: 10px;
+  margin-right: 20px;
+  text-align: center;
 }
 
 .host-name-logement {

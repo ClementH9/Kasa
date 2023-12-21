@@ -2,7 +2,7 @@ import logement from '../../Assets/logement.json';
 import '../../Assets/css/App.css';
 import { useParams } from 'react-router-dom';
 import Collapse from '../../components/A propos/about-text';
-import Ratings from '../../components/Ratings/ratings'
+import Tags from '../../components/Tags/tags';
 
 function Appartement() {
   let { id } = useParams();
@@ -33,7 +33,7 @@ function Appartement() {
           <div className="titre-lieu-tags">
             <h2 className="title-logement">{targetLogement.title}</h2>
             <div className="location-logement">{targetLogement.location}</div>
-            <div className="tags-logement">{targetLogement.tags}</div>
+            <Tags tags={targetLogement.tags}/>  
           </div>
         </div>
         <div className="logement-droite">
@@ -58,7 +58,7 @@ function Appartement() {
         <div className="collapse-equipments">
           <Collapse 
           title="Equipements"
-          content={String(targetLogement.equipments)}
+          content={targetLogement.equipments.join("\n")}
           />
         </div>
       </div>
