@@ -6,8 +6,8 @@
 
 .container
 {
-    min-width: 992px;
-    max-width: 1400px; /* entre 992 et 1400 pixels pour le contenu */
+  min-width: 992px;
+  max-width: 1400px; /* entre 992 et 1400 pixels pour le contenu */
 }
 
 .App {
@@ -24,7 +24,7 @@ header {
 }
 
 header, main{
-  width : 1240px;
+  max-width : 1240px;
   margin: auto;
 }
 
@@ -99,8 +99,7 @@ h1 {
   background-color: #F6F6F6;
   border-radius: 25px;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   padding: 2.5rem 0rem;
   margin-bottom: 40px;
@@ -138,11 +137,6 @@ h1 {
   font-size: 16px;
 }
 
-.home-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Espace entre les cartes */
-}
 
 .about-banner{
   padding-top: 40px;
@@ -256,16 +250,18 @@ h1 {
 .tags-logement{
   display: flex;
   justify-content:flex-start;
+  margin-top: 20px;
 }
 
 .style-tag{
   background-color: #FF6060;
   color:white;
-  width: 120px;
-  height: 25px;
+  width: 175px;
+  height: 30px;
   border-radius: 10px;
   margin-right: 20px;
   text-align: center;
+  vertical-align: middle;
 }
 
 .host-name-logement {
@@ -343,7 +339,7 @@ h1 {
   
   .container
     {
-        min-width: 769px;
+        min-width: auto;
         max-width: 992px;
         padding-left: 40px;
         padding-right: 40px;
@@ -357,6 +353,11 @@ h1 {
     flex: 0 0 calc(50% - 20px); /* Deux cartes par ligne avec marge */
   }
 
+  .card img {
+    width: auto;
+    height: 380px;
+  }
+
 }
 
 /* Ajoutez ces styles pour la version tablette (écran entre 769px et 992px) */
@@ -364,10 +365,9 @@ h1 {
   
   .container
     {
-        max-width: 768px;
         min-width: auto;
-        padding: 0;
-        margin: 0;
+        padding-left: 40px;
+        padding-right: 40px;
     }
   
   .home-gallery {
@@ -379,7 +379,7 @@ h1 {
   }
 
   .card img {
-    width: 300px;
-    height: 300px;
+    width: 220px;
+    height: 220px;
   }
 }
