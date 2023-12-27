@@ -25,7 +25,6 @@ function Appartement() {
       <div className="desc-logement">{targetLogement.description}</div>
       <div className="equipments-logement">{targetLogement.equipments}</div>
     </div>*/
-  <div className="container">
     <div className="infos-logement font-text">
       <img className="cover-logement" src={targetLogement.cover} alt="cover"></img>
       <div className ="logement-top">
@@ -63,7 +62,6 @@ function Appartement() {
         </div>
       </div>
     </div>
-  </div>
     
     )
   }
