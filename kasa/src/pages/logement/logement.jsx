@@ -3,6 +3,7 @@ import '../../Assets/css/App.css';
 import { useParams } from 'react-router-dom';
 import Collapse from '../../components/A propos/about-text';
 import Tags from '../../components/Tags/tags';
+import Ratings from '../../components/Ratings/ratings'
 
 function Appartement() {
   let { id } = useParams();
@@ -43,7 +44,7 @@ function Appartement() {
               {hostLastName}</div>
               <img className="host-picture-logement" src={targetLogement.host.picture} alt="host"></img>
             </div>
-            <div className="rating-logement">{targetLogement.rating}</div>
+            <Ratings rating={targetLogement.rating} />
           </div>
         </div>
       </div>
