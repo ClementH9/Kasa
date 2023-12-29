@@ -3,7 +3,8 @@ import '../../Assets/css/App.css';
 import { useParams } from 'react-router-dom';
 import Collapse from '../../components/A propos/about-text';
 import Tags from '../../components/Tags/tags';
-import Ratings from '../../components/Ratings/ratings'
+import Ratings from '../../components/Ratings/ratings';
+import Carrousel from '../../components/Carrousel/carrousel'
 
 function Appartement() {
   let { id } = useParams();
@@ -27,7 +28,7 @@ function Appartement() {
       <div className="equipments-logement">{targetLogement.equipments}</div>
     </div>*/
     <div className="infos-logement font-text">
-      <img className="cover-logement" src={targetLogement.cover} alt="cover"></img>
+      <Carrousel pictures={targetLogement.pictures}/>
       <div className ="logement-top">
         <div className="logement-gauche">
           <div className="titre-lieu-tags">

@@ -1,4 +1,5 @@
-import star from '../../assets/emptyStar.svg'
+import emptyStar from '../../Assets/Images/emptyStar.svg'
+import fullStar from '../../Assets/Images/star-rate.svg'
 
 function Ratings({ rating }) {
 	/* Creating a rating system of 5 stars. */
@@ -13,7 +14,7 @@ function Ratings({ rating }) {
 				<img
 					className="star"
 					key={'full-star-' + i}
-					src={star}
+					src={fullStar}
 					alt="Full Star Rating"
 				/>
 			))}
@@ -22,7 +23,7 @@ function Ratings({ rating }) {
 				<img
 					className="star-empty"
 					key={'empty-star-' + i}
-					src={star}
+					src={emptyStar}
 					alt="Empty Star Rating"
 				/>
 			))}
