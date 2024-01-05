@@ -8,8 +8,6 @@
 {
   min-width: 992px;
   max-width: 1400px; /* entre 992 et 1400 pixels pour le contenu */
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .App {
@@ -312,10 +310,6 @@ h1 {
   width: 40%;
 }
 
-.nom-photo-note {
-  align-items: flex-end;
-}
-
 .name-photo-host{
   display: flex;
   align-items: center;
@@ -420,6 +414,10 @@ h1 {
     height: 255px;
   }
 
+  .vector-left, .vector-right {
+  width: 20px;
+}
+
   .collapses{
     display: block;
     flex-wrap: nowrap;  
@@ -446,6 +444,13 @@ h1 {
     width: 100%;
   }
 
+  .nom-photo-note{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+  }
+
 }
 
 /* Ajoutez ces styles pour la version tablette (écran entre 769px et 992px) */
@@ -455,15 +460,35 @@ h1 {
     {
         min-width: 853px;
         max-width: 992px;
-        padding-left: 20px;
-        padding-right: 20px;
     }
   
   .home-gallery {
     justify-content: space-between; /* Espace entre les cartes comme dans la version desktop */
   }
 
+  .logement-gauche {
+    width: 70%
+  }
+  
+  .logement-droite {
+    width: 30%;
+  } 
+  
+}
+
+@media screen and (min-width: 852px) and (max-width:1209px) {
+
   .card {
     flex: 0 0 calc(50% - 20px); /* Deux cartes par ligne avec marge */
+    width: 90%;
   }
-}
+
+  .dim-img{
+    width: 50%;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  }
