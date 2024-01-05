@@ -47,40 +47,11 @@ function Carrousel({ pictures }) {
             </div>
           );
         })}
-        <div>
+        <div className="numero-image">
             {current + 1}/{pictures.length}
         </div>
       </section>
     );
   };
-
-    /*const imageNumber = parseInt(pictures)
-
-	return (
-		<div className="carrousel-photos">
-
-			{[...Array(imageNumber)].map((image, i) => (
-				<img
-					className="image-logement"
-					key={i}
-					src={image}
-					alt="Cover Logement"
-				/>
-			))}
-            <img
-					className="vector-left"
-					key="vector-left"
-					src={vectorLeft}
-					alt="Flèche Gauche"
-			/>
-            <img
-					className="vector-right"
-					key="vector-right"
-					src={vectorRight}
-					alt="Flèche Droite"
-			/>
-		</div>
-	) 
-}*/
 
 export default Carrousel
