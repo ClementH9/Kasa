@@ -1,14 +1,18 @@
 import logement from '../../Assets/logement.json';
 import '../../Assets/css/App.css';
-import { useParams } from 'react-router-dom';
+import { useParams} from "react-router-dom"
 import Collapse from '../../components/A propos/about-text';
 import Tags from '../../components/Tags/tags';
 import Ratings from '../../components/Ratings/ratings';
-import Carrousel from '../../components/Carrousel/carrousel'
+import Carrousel from '../../components/Carrousel/carrousel';
+import Error from '../../pages/error/error';
 
 function Appartement() {
-  let { id } = useParams();
-  const targetLogement = logement.find((data) => data.id==id);
+  let { id } = useParams();
+  const targetLogement = logement.find((data) => data.id === id);
+  if (!targetLogement) {
+    return(<Error />)
+  }
   if (targetLogement) {
     const hostNameArray = targetLogement.host.name.split(' ');
     const hostFirstName = hostNameArray[0];
