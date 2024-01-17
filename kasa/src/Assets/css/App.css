@@ -107,8 +107,6 @@ h1 {
 
 .card {
   position: relative;
-  overflow: hidden;
-  border-radius: 25px;
   margin: 25px;
   flex: 0 0 calc(33.33% - 20px); /* Trois cartes par ligne avec marge */
 }
